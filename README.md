@@ -23,4 +23,5 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<iframe src="https://giphy.com/embed/aGQ1xapgC3cVQTBt3a" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/aGQ1xapgC3cVQTBt3a">via GIPHY</a></p>
+![giphy](https://user-images.githubusercontent.com/19720373/110532304-a2628400-80ea-11eb-9623-e4c5750c7e25.gif)
+
