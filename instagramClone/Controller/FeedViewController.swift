@@ -16,13 +16,35 @@ class FeedViewController: UIViewController {
     
     var posts = [PFObject]()
     
+    let myRefreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        myRefreshControl.addTarget(self, action: #selector(loadPosts), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
     }
+    
+    @objc func loadPosts () {
+        
+        let query = PFQuery(className: "Posts")
+        query.includeKey("author")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (posts, error) in
+            
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+            self.myRefreshControl.endRefreshing()
+        }
+    }
+    
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,5 +87,21 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
         
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.color = UIColor.red
+        spinner.hidesWhenStopped = true
+        tableView.tableFooterView = spinner
+        
+        //print (indexPath.row)
+        if (indexPath.row  == posts.count - 1) {
+            
+            spinner.startAnimating()
+            loadPosts()
+            spinner.stopAnimating()
+        }
     }
 }
