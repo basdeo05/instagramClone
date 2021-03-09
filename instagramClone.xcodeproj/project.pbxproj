@@ -15,6 +15,7 @@
 		DDBC03F825F7D3ED005DCD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBC03F725F7D3ED005DCD42 /* Assets.xcassets */; };
 		DDBC03FB25F7D3ED005DCD42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBC03F925F7D3ED005DCD42 /* LaunchScreen.storyboard */; };
 		DDBC041225F7D928005DCD42 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC041125F7D928005DCD42 /* FeedViewController.swift */; };
+		DDBC041625F7E254005DCD42 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC041525F7E254005DCD42 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DDBC03FA25F7D3ED005DCD42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDBC03FC25F7D3ED005DCD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDBC041125F7D928005DCD42 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DDBC041525F7E254005DCD42 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		EE80EFE4E83C07F585CDFA43 /* Pods-instagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramClone.debug.xcconfig"; path = "Target Support Files/Pods-instagramClone/Pods-instagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 			children = (
 				DDBC03F225F7D3ED005DCD42 /* LoginViewController.swift */,
 				DDBC041125F7D928005DCD42 /* FeedViewController.swift */,
+				DDBC041525F7E254005DCD42 /* CameraViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBC03F325F7D3ED005DCD42 /* LoginViewController.swift in Sources */,
+				DDBC041625F7E254005DCD42 /* CameraViewController.swift in Sources */,
 				DDBC03EF25F7D3ED005DCD42 /* AppDelegate.swift in Sources */,
 				DDBC041225F7D928005DCD42 /* FeedViewController.swift in Sources */,
 				DDBC03F125F7D3ED005DCD42 /* SceneDelegate.swift in Sources */,
