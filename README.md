@@ -23,5 +23,8 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![giphy](https://user-images.githubusercontent.com/19720373/110532304-a2628400-80ea-11eb-9623-e4c5750c7e25.gif)
+#App Icon, Style Launch Screen, Sign Up, Sign In
+
+![giphy](https://user-images.githubusercontent.com/19720373/111075386-32734580-84be-11eb-8e22-93e2157c37d6.gif)
+
 
