@@ -31,5 +31,12 @@ Here's a walkthrough of implemented user stories:
 
 ![giphy](https://user-images.githubusercontent.com/19720373/111075538-d826b480-84be-11eb-9f9a-3f72c048e211.gif)
 
+# Infinite Scrolling
+At first only had two posts. Could not scrolly any further. When uploading a third post and the scroll you can see new post.
+
+
+![giphy](https://user-images.githubusercontent.com/19720373/111075740-cabdfa00-84bf-11eb-9477-d1d152c79ae5.gif)
+
+
 
 
