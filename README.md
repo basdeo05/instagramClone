@@ -23,8 +23,13 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-#App Icon, Style Launch Screen, Sign Up, Sign In
+# App Icon, Style Launch Screen, Sign Up, Sign In
 
 ![giphy](https://user-images.githubusercontent.com/19720373/111075386-32734580-84be-11eb-8e22-93e2157c37d6.gif)
+
+# Creating a Post, Posting to Server, Pull to Refresh
+
+![giphy](https://user-images.githubusercontent.com/19720373/111075538-d826b480-84be-11eb-9f9a-3f72c048e211.gif)
+
 
 
