@@ -84,7 +84,6 @@
 				DDBC040D25F7D8DF005DCD42 /* View */,
 				DDBC040E25F7D8EA005DCD42 /* Controller */,
 				DDBC03F725F7D3ED005DCD42 /* Assets.xcassets */,
-				DDBC03F925F7D3ED005DCD42 /* LaunchScreen.storyboard */,
 				DDBC03FC25F7D3ED005DCD42 /* Info.plist */,
 			);
 			path = instagramClone;
@@ -93,6 +92,7 @@
 		DDBC040D25F7D8DF005DCD42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DDBC03F925F7D3ED005DCD42 /* LaunchScreen.storyboard */,
 				DDBC03F425F7D3ED005DCD42 /* Main.storyboard */,
 				DD8B598025F7F6A1003001AD /* PostCell.swift */,
 			);
