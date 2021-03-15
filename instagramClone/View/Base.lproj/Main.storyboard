@@ -236,11 +236,18 @@
                                 <action selector="logOutPressed:" destination="LBa-Sf-70N" id="Ttf-8C-4PK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="rTd-Bo-yXO">
-                            <connections>
-                                <segue destination="gvc-sY-xtV" kind="presentation" modalPresentationStyle="fullScreen" id="lpC-oK-GdE"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="insta_camera_btn" id="rTd-Bo-yXO">
+                                <connections>
+                                    <segue destination="gvc-sY-xtV" kind="presentation" modalPresentationStyle="fullScreen" id="lpC-oK-GdE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="profile_tab" id="7EG-i9-ujQ">
+                                <connections>
+                                    <segue destination="6Ai-bf-VmI" kind="show" id="9pr-iv-udr"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Oui-h1-iLt" id="yfh-YF-3mA"/>
@@ -248,7 +255,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6E-wD-FdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="86.383928571428569"/>
+            <point key="canvasLocation" x="951" y="856"/>
+        </scene>
+        <!--Profile Picture View Controller-->
+        <scene sceneID="qJL-vp-N2s">
+            <objects>
+                <viewController id="6Ai-bf-VmI" customClass="ProfilePictureViewController" customModule="instagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paB-rv-daW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="um6-wn-DrP">
+                                <rect key="frame" x="46" y="235" width="322" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZLK-CD-mtc" appends="YES" id="nba-ZT-ezX"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add A Profile Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skW-J6-KVL">
+                                <rect key="frame" x="87" y="133" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw0-uN-DQK">
+                                <rect key="frame" x="150" y="684" width="85" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonClicked:" destination="6Ai-bf-VmI" eventType="touchUpInside" id="eAK-dL-H1i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9CV-Sv-5e1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M8u-IR-6CP"/>
+                    <connections>
+                        <outlet property="userImage" destination="um6-wn-DrP" id="azx-W6-QG4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lyl-AC-5OA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZLK-CD-mtc">
+                    <connections>
+                        <action selector="userTapImage:" destination="6Ai-bf-VmI" id="5ML-bq-6mL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="260.86956521739131" y="1661.3839285714284"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="WEz-Ac-7mQ">
@@ -300,7 +357,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2762.3188405797105" y="92.410714285714278"/>
+            <point key="canvasLocation" x="1571" y="1660"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A75-W4-OM8">
@@ -325,6 +382,7 @@
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram_logo" width="255" height="108"/>
+        <image name="profile_tab" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

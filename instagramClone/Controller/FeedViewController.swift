@@ -156,6 +156,24 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
             let user = comment["author"] as! PFUser
             cell.authorPost.text = user.username
             
+            
+            
+            // Do any additional setup after loading the view.
+                
+                if let imageFile = user["profilePicture"] as? PFFileObject {
+                    
+                    if let urlString = imageFile.url {
+                        
+                        if let theURL = URL(string: urlString){
+                        
+                            cell.userImage.af.setImage(withURL: theURL)
+                        
+                    }
+                    
+                }
+                
+            }
+        
             return cell
         }
         
