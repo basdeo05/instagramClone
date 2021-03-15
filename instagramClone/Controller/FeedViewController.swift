@@ -147,6 +147,26 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
             
             cell.photoView.af.setImage(withURL: url!)
             
+            
+            if let imageFile = user["profilePicture"] as? PFFileObject {
+                
+                if let urlString = imageFile.url {
+                    
+                    if let theURL = URL(string: urlString){
+                    
+                        cell.userProfilePicture.af.setImage(withURL: theURL)
+                    
+                }
+                
+            }
+            
+        }
+            
+            
+            
+            
+            
+            
             return cell
         }
         else if indexPath.row <= comments.count {
