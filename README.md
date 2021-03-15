@@ -26,6 +26,17 @@ Here's a walkthrough of implemented user stories:
 
 ![giphy-2](https://user-images.githubusercontent.com/19720373/111214813-c3265000-85a8-11eb-979e-d87f136a433b.gif)
 
+# Adding Profile Picture
+
+![giphy](https://user-images.githubusercontent.com/19720373/111215370-78590800-85a9-11eb-9dd6-3abca3201d2a.gif)
+
+# Posting Comments And Seeing Profile Pictures
+
+
+![giphy](https://user-images.githubusercontent.com/19720373/111216372-bacf1480-85aa-11eb-9306-3a3dd68344c6.gif)
+
+
+
 
 
 
