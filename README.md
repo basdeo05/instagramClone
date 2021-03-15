@@ -22,7 +22,10 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+# User Stays Logged In, User Can Sign Out, User Can View Comments
+
+![giphy-2](https://user-images.githubusercontent.com/19720373/111214813-c3265000-85a8-11eb-979e-d87f136a433b.gif)
+
 
 
 
